@@ -20,10 +20,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className=" h-24 bg-dark_blue text-white font-figtreeRegular top-0 w-full  shadow-lg">
-      <div className="mx-auto max-w-7xl px-2 md:px-6 lg:px-8">
-        <div className="relative items-center flex  justify-between">
-          <div className="absolute inset-y-0 left-0 items-center flex  md:hidden">
+    <nav className=" h-24 bg-dark_blue text-white font-figtreeRegular top-0 w-full  shadow-lg sticky">
+      <div className="mx-auto w-[85%]">
+        <div className="items-center flex  justify-between">
+          <div className=" inset-y-0 left-0 items-center flex  md:hidden">
             {/* <!-- Mobile menu button--> */}
             <button
               type="button"
@@ -62,7 +62,7 @@ const Navbar = () => {
             </button>
           </div>
 
-          <div className="items-center flex  justify-around h-24 w-full">
+          <div className="items-center flex justify-between h-24 w-full">
            <Link to='/'>
            <div className="flex items-center cursor-pointer">
               <img

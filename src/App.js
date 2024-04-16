@@ -24,11 +24,10 @@ function App() {
     location.pathname === '/batches' ||
     location.pathname === '/aboutus' ||
     location.pathname === '/contact' ||
-    location.pathname === '/summercamp'||
-    location.pathname === '/tournaments';
+    location.pathname === '/summercamp';
 
   return (
-    <div className=''>
+    <div className='font-figtreeRegular'>
       {loading ? ( // Display loader while loading is true
         <Loader />
       ) : (
