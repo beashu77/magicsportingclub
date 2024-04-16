@@ -16,7 +16,7 @@ function App() {
     location.pathname === '/summercamp';
 
   return (
-    <div className="App">
+    <div className='border'>
       {showNavbarAndFooter && <Navbar />} {/* Render Navbar on specified routes */}
       <Layout />
       {showNavbarAndFooter && <Footer />} {/* Render Footer on specified routes */}
