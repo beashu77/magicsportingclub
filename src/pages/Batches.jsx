@@ -2,7 +2,7 @@ import React from 'react'
 
 const Batches = () => {
   return (
-    <div>Batches</div>
+    <div className='border border-black w-[85%] m-auto'>Batches</div>
   )
 }
 

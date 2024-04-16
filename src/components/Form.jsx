@@ -2,7 +2,7 @@ import React from 'react'
 
 const Form = () => {
   return (
-    <div>Form</div>
+    <div className='border border-black w-[85%] m-auto'>Form</div>
   )
 }
 
