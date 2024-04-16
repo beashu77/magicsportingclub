@@ -5,6 +5,7 @@ import AboutUs from "./AboutUs";
 import Contact from "./Contact";
 import SummerCamp from "./SummerCamp";
 import { Route,Routes } from 'react-router-dom';
+import Tournaments from './Tournaments';
 const NotFound = () => <h2>Page not found</h2>;
 
 const Layout = () => {
@@ -16,6 +17,7 @@ const Layout = () => {
           <Route path="/aboutus" element={<AboutUs/>}/>
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/summercamp" element={<SummerCamp/>}/>
+          <Route path="/tournaments" element={<Tournaments/>}/>
           <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
