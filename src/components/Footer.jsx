@@ -67,7 +67,7 @@ const Footer = () => {
           <span className="block pb-2">
             {" "}
             <MdEmail className="text-yellow_dark inline mr-2" />
-            info@msc.ac.in
+            bhushandhuri86@gmail.com
           </span>
 
           <div className="flex gap-4 pt-5 text-dark_blue">
