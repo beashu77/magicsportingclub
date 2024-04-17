@@ -8,9 +8,9 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 const Footer = () => {
   return (
-    <div className="bg-dark_blue text-white py-10">
-      <div className="border border-black flex flex-col lg:flex-row  justify-between w-[85%]  m-auto gap-5">
-        <div className="border border-caribbeangreen lg:w-[25%] ">
+    <div className="bg-dark_blue text-white py-10 ">
+      <div className="flex flex-col lg:flex-row  justify-between w-[85%]  m-auto gap-5">
+        <div className="lg:w-[25%] ">
           <p className="text-2xl">Magic Sporting Club</p>
           <br />
 
@@ -23,7 +23,7 @@ const Footer = () => {
             <span className="block ">Karnataka, India - 590009</span>
           </p>
         </div>
-        <div className="border border-caribbeangreen lg:w-[25%] text-lg ">
+        <div className="lg:w-[25%] text-lg ">
           <p className="text-2xl">Magic Pro</p>
           <br />
           <span className="block pb-4">
@@ -42,7 +42,7 @@ const Footer = () => {
             </Link>
           </span>
         </div>
-        <div className="border border-caribbeangreen lg:w-[25%] text-lg">
+        <div className="lg:w-[25%] text-lg">
           <p className="text-2xl"></p>
           <span className="block pb-4 lg:mt-[19%] ">
             <Link to={"/SummerCamp"}>
@@ -57,7 +57,7 @@ const Footer = () => {
           </span>
         </div>
 
-        <div className="border border-caribbeangreen lg:w-[25%] text-lg">
+        <div className="lg:w-[25%] text-lg">
           <p className="text-2xl">Contact Details</p>
           <br />
           <span className="block pb-2">
