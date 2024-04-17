@@ -8,7 +8,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 const Footer = () => {
   return (
-    <div className="bg-dark_blue text-white py-10 bottom-0 fixed w-full">
+    <div className="bg-dark_blue text-white py-10 ">
       <div className="flex flex-col lg:flex-row  justify-between w-[85%]  m-auto gap-5">
         <div className="lg:w-[25%] ">
           <p className="text-2xl">Magic Sporting Club</p>
