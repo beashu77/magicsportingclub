@@ -24,7 +24,8 @@ function App() {
     location.pathname === '/batches' ||
     location.pathname === '/aboutus' ||
     location.pathname === '/contact' ||
-    location.pathname === '/summercamp';
+    location.pathname === '/summercamp' ||
+    location.pathname === '/tournaments';
 
   return (
     <div className='font-figtreeRegular'>

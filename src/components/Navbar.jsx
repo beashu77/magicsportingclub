@@ -83,8 +83,8 @@ const Navbar = () => {
                 {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
                 <Link to="/aboutus">
                   <div
-                    className={`hover:text-yellow ${
-                      activeItem === "aboutus" ? "text-yellow" : ""
+                    className={`hover:text-yellow_dark ${
+                      activeItem === "aboutus" ? "text-yellow_dark" : ""
                     }`}
                     onClick={() => handleItemClick("aboutus")}
                   >
@@ -93,8 +93,8 @@ const Navbar = () => {
                 </Link>
                 <Link to="/batches">
                   <div
-                    className={`hover:text-yellow ${
-                      activeItem === "batches" ? "text-yellow" : ""
+                    className={`hover:text-yellow_dark ${
+                      activeItem === "batches" ? "text-yellow_dark" : ""
                     }`}
                     onClick={() => handleItemClick("batches")}
                   >
@@ -104,8 +104,8 @@ const Navbar = () => {
                 </Link>{" "}
                 <Link to="/tournaments">
                   <div
-                    className={`hover:text-yellow ${
-                      activeItem === "tournaments" ? "text-yellow" : ""
+                    className={`hover:text-yellow_dark ${
+                      activeItem === "tournaments" ? "text-yellow_dark" : ""
                     }`}
                     onClick={() => handleItemClick("tournaments")}
                   >
@@ -124,8 +124,8 @@ const Navbar = () => {
                 </Link>
                 <Link to="/contact">
                   <div
-                    className={`hover:text-yellow ${
-                      activeItem === "contact" ? "text-yellow" : ""
+                    className={`hover:text-yellow_dark ${
+                      activeItem === "contact" ? "text-yellow_dark" : ""
                     }`}
                     onClick={() => handleItemClick("contact")}
                   >
@@ -148,7 +148,7 @@ const Navbar = () => {
           {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
           <Link to="/aboutus">
             <div
-              className="hover:text-yellow py-2"
+              className="hover:text-yellow_dark py-2"
               onClick={() => {
                 handleMenuItemClick();
                 // Add additional actions for this menu item
@@ -159,7 +159,7 @@ const Navbar = () => {
           </Link>
           <Link to="/batches">
             <div
-              className="hover:text-yellow pb-2"
+              className="hover:text-yellow_dark pb-2"
               onClick={() => {
                 handleMenuItemClick();
                 // Add additional actions for this menu item
@@ -171,7 +171,7 @@ const Navbar = () => {
           </Link>{" "}
           <Link to="/tournaments">
             <div
-              className="hover:text-yellow pb-2"
+              className="hover:text-yellow_dark pb-2"
               onClick={() => {
                 handleMenuItemClick();
                 // Add additional actions for this menu item
@@ -182,7 +182,7 @@ const Navbar = () => {
           </Link>
           <Link to="/summercamp">
             <div
-              className="hover:text-yellow mb-2"
+              className="hover:text-yellow_dark mb-2"
               onClick={() => {
                 handleMenuItemClick();
                 // Add additional actions for this menu item
@@ -193,7 +193,7 @@ const Navbar = () => {
           </Link>
           <Link to="/contact">
             <div
-              className="hover:text-yellow pb-2"
+              className="hover:text-yellow_dark pb-2"
               onClick={() => {
                 handleMenuItemClick();
                 // Add additional actions for this menu item
