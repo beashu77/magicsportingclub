@@ -20,7 +20,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className=" h-24 bg-dark_blue text-white font-figtreeRegular top-0 w-full  shadow-lg sticky">
+    <nav className=" h-24 bg-dark_blue z-999  text-white font-figtreeRegular top-0 w-full  shadow-lg sticky">
       <div className="mx-auto w-[85%]">
         <div className="items-center flex  justify-between">
           <div className=" inset-y-0 left-0 items-center flex  md:hidden">
