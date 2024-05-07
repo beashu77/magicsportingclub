@@ -15,7 +15,7 @@ const Footer = () => {
           <br />
 
           <p className="text-lg">
-            <span className="block pb-4">
+            <span className="block">
               <FaLocationDot className="text-yellow_dark inline" /> 1 km, NH-54,
             </span>
             <span className="block ">St Paul's High school bground,</span>
