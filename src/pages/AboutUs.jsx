@@ -75,15 +75,16 @@ const AboutUs = () => {
           </div>
         </div>
 
-        <div className="flex flex-col space-between lg:flex-row-reverse gap-5 mt-20">
-          <div className="lg:w-[50%]">
+
+        <div className="flex flex-col  lg:flex-row-reverse gap-5 mt-20 border border-black">
+          <div className="lg:w-[40%]">
             <img
               src={AboutUsHero}
               alt="Hero image"
               className="w-[100%] rounded-lg drop-shadow-md lg:h-[500px]"
             />
           </div>
-          <div className="lg:w-[50%] flex flex-col justify-center gap-5">
+          <div className="lg:w-[60%] flex flex-col justify-center gap-5 border border-black">
             <p className="text-2xl">MISSION</p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
