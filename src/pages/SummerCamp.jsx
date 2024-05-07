@@ -21,6 +21,32 @@ const SummerCamp = () => {
     autoplay: true,
     autoplaySpeed: 2000,
     arrows: true,
+    responsive: [
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+          prevArrow: false, // Hide arrows for md screens
+          nextArrow: false, // Hide arrows for md screens
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          prevArrow: false, // Hide arrows for md screens
+          nextArrow: false, // Hide arrows for md screens
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          prevArrow: false, // Hide arrows for md screens
+          nextArrow: false, // Hide arrows for md screens
+        },
+      },
+    ],
   };
 
   const images = [
@@ -70,7 +96,7 @@ const SummerCamp = () => {
     <div className="border border-black box-content overflow-hidden z-0">
       {/* slider for summer camp */}
       <div className="bg-light_grey">
-        <Slider {...settings} className="pt-6 pb-6 m-auto">
+        <Slider {...settings} className="pt-6 pb-6 m-auto md:pl-4 pl-4">
           {images.map((image, index) => (
             <div key={index}>
               <img
@@ -83,7 +109,7 @@ const SummerCamp = () => {
         </Slider>
       </div>
 
-      <div className=" items-center flex justify-center gap-3 border w-[50%] text-xl rounded-lg m-auto my-20 py-5 bg-light_blue text-white">
+      <div className=" items-center flex justify-center gap-3 border lg:w-[50%] w-[90%] text-xl rounded-lg m-auto my-20 lg:py-5 py-3 bg-light_blue text-white">
         <span>
           <FaTag style={{ color: "red", height: "30px", width: "30px" }} />
         </span>{" "}
@@ -91,9 +117,9 @@ const SummerCamp = () => {
       </div>
 
       {/* forms for packages */}
-      <div className="border items-center flex justify-between gap-5 w-[85%] m-auto">
+      <div className=" items-center flex flex-col lg:flex-row justify-between gap-5 lg:w-[85%] w-[95%] m-auto ">
         {/* packages section */}
-        <div className="border border-yellow w-[50%] bg-[#455531] p-10 rounded-lg text-white">
+        <div className="border border-yellow lg:w-[50%] w-[95%] bg-[#455531] lg:p-10 p-5 rounded-lg text-white h-full">
           <h1 className="text-center text-2xl font-figtreeBold">
             BUY SUMMER CAMP MEMBERSHIP
           </h1>
@@ -101,33 +127,84 @@ const SummerCamp = () => {
             Select preferences & purchase your pack below.
           </h2>
 
-          <div className="mx-auto bg-white text-black shadow-md rounded-lg overflow-hidden flex justify-between">
-            <div className="px-4 py-2">
-              <div className="text-xl font-bold text-gray-800">Camp 2</div>
-              <div className="text-sm text-gray-600">
-                April 22nd to May 12th
+          <div>
+             <div className="mx-auto bg-white text-black shadow-md rounded-lg overflow-hidden flex justify-between mb-10">
+              <div className="px-4 py-2">
+                <div className="lg:text-xl font-bold text-gray-800">Camp 2 April 22nd to May 12th</div>
+                <div className="mt-2">
+                  <span className="text-green-600 font-bold lg:text-xl">
+                    ₹5,499
+                  </span>
+                  <span className="text-gray-600"> / 5,500</span>
+                </div>
+                <div className="mt-4">
+                  <span className="text-gray-800 font-bold">Swimming</span>
+                  <span className="text-gray-600"> (Mon-Sun)</span>
+                </div>
+                <div className="text-sm text-gray-600">
+                  16 classes + 2 compensation classes
+                </div>
               </div>
-              <div className="mt-2">
-                <span className="text-green-600 font-bold text-xl">₹5,499</span>
-                <span className="text-gray-600"> / 5,500</span>
-              </div>
-              <div className="mt-4">
-                <span className="text-gray-800 font-bold">Swimming</span>
-                <span className="text-gray-600"> (Mon-Sun)</span>
-              </div>
-              <div className="text-sm text-gray-600">
-                16 classes + 2 compensation classes
+              <div className="px-4 py-2 items-center flex justify-center">
+                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                  Add to Cart
+                </button>
               </div>
             </div>
-            <div className="px-4 py-2 items-center flex justify-center">
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                Add to Cart
-              </button>
+
+             <div className="mx-auto bg-white text-black shadow-md rounded-lg overflow-hidden flex justify-between mb-10">
+              <div className="px-4 py-2">
+                <div className="lg:text-xl font-bold text-gray-800">Camp 2 April 22nd to May 12th</div>
+                <div className="mt-2">
+                  <span className="text-green-600 font-bold lg:text-xl">
+                    ₹5,499
+                  </span>
+                  <span className="text-gray-600"> / 5,500</span>
+                </div>
+                <div className="mt-4">
+                  <span className="text-gray-800 font-bold">Swimming</span>
+                  <span className="text-gray-600"> (Mon-Sun)</span>
+                </div>
+                <div className="text-sm text-gray-600">
+                  16 classes + 2 compensation classes
+                </div>
+              </div>
+              <div className="px-4 py-2 items-center flex justify-center">
+                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                  Add to Cart
+                </button>
+              </div>
             </div>
+
+            <div className="mx-auto bg-white text-black shadow-md rounded-lg overflow-hidden flex justify-between mb-10">
+              <div className="px-4 py-2">
+                <div className="lg:text-xl font-bold text-gray-800">Camp 2 April 22nd to May 12th</div>
+                <div className="mt-2">
+                  <span className="text-green-600 font-bold lg:text-xl">
+                    ₹5,499
+                  </span>
+                  <span className="text-gray-600"> / 5,500</span>
+                </div>
+                <div className="mt-4">
+                  <span className="text-gray-800 font-bold">Swimming</span>
+                  <span className="text-gray-600"> (Mon-Sun)</span>
+                </div>
+                <div className="text-sm text-gray-600">
+                  16 classes + 2 compensation classes
+                </div>
+              </div>
+              <div className="px-4 py-2 items-center flex justify-center">
+                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+   
+            
           </div>
         </div>
         {/* form details section */}
-        <div className=" bg-light_grey w-[50%] shadow-md rounded-lg px-8 pt-6 pb-8 mb-4">
+        <div className=" bg-light_grey lg:w-[50%] w-[95%] shadow-md rounded-lg px-8 pt-6 pb-8 mb-4">
           <h1 className="text-center text-2xl font-figtreeBold text-[#D12325]">
             REACH OUT TO US
           </h1>
